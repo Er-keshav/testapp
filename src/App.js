@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./Mycomponents/Header";
+import {Breadcrum} from "./Mycomponents/Breadcrum";
+import {Search} from "./Mycomponents/Search";
+import {Searchresult} from "./Mycomponents/Searchresult";
+import {Sidebar} from "./Mycomponents/Sidebar";
+import {Results} from "./Mycomponents/Results";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header/>
+      <Breadcrum/>
+      <Search/>
+      <Searchresult/>
+      <Sidebar/>
+      <Results/>
+    </>
   );
 }
 
